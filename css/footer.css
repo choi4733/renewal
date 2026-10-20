@@ -1,0 +1,169 @@
+/* Footer */
+#footer {
+  padding: 48px 70px 56px;
+  border-top: 1px solid #e5dfda;
+  background-color: #f5f1ed;
+}
+
+.footer_inner {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1.1fr)
+    minmax(0, 1.7fr)
+    minmax(0, 1fr);
+  gap: 40px;
+
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #555;
+  overflow-wrap: anywhere;
+}
+
+/* 각 영역 제목 */
+.footer_inner h3 {
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #333;
+}
+
+.footer_inner p + p {
+  margin-top: 4px;
+}
+
+/* 고객센터 */
+.footer_inner .customer_tel {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #333;
+}
+
+.bank {
+  margin-top: 18px;
+}
+
+/* 반품 · 교환 */
+.footer_inner .footer_note {
+  margin-top: 12px;
+  color: #888;
+}
+
+/* 커뮤니티 */
+.community {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 18px;
+}
+
+.community a {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* 회사 정보 상단 링크 */
+.footer_links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 20px;
+}
+
+.footer_links a {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #333;
+}
+
+.footer_links .privacy_link {
+  font-weight: 700;
+}
+
+/* 저작권 · 포트폴리오 안내 */
+.footer_inner .copyright {
+  margin-top: 20px;
+  font-size: 0.65rem;
+  color: #555;
+}
+
+.footer_inner .portfolio_notice {
+  margin-top: 6px;
+  font-size: 0.65rem;
+  color: #888;
+}
+
+/* 서비스 안내 */
+.service_link {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 6px 10px;
+  border: 1px solid #ded6cf;
+  border-radius: 3px;
+  font-size: 0.65rem;
+  color: #555;
+}
+
+/* 링크 */
+#footer a:hover {
+  color: #9c7660;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#footer a:focus-visible {
+  outline: 2px solid #9c7660;
+  outline-offset: 4px;
+}
+
+/* 안내 문구 */
+.footer_inner .footer_note,
+.footer_inner .portfolio_notice {
+  font-size: 11px;
+  color: #666;
+}
+
+/* 저작권 · 서비스 링크 */
+.footer_inner .copyright,
+.service_link {
+  font-size: 11px;
+  color: #555;
+}
+/* 태블릿: 2열 */
+@media (max-width: 1200px) {
+  #footer {
+    padding: 40px 40px 48px;
+  }
+
+  .footer_inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 40px;
+  }
+}
+
+/* 모바일: 1열 */
+@media (max-width: 780px) {
+  #footer {
+    padding: 32px 20px 40px;
+  }
+
+  .footer_inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer_inner h3,
+  .footer_links {
+    margin-bottom: 14px;
+  }
+}

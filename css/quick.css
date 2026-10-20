@@ -1,0 +1,45 @@
+/* quick category */
+.quick_category {
+  padding: 32px 70px;
+  background-color: #fff;
+}
+
+.quick_inner {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.quick_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+  padding: 10px 8px;
+
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+  color: #555;
+  flex-direction: column;
+  gap: 8px;
+  transition: color 0.2s ease;
+}
+
+.quick_link:hover {
+  color: #9c7660;
+}
+
+.quick_link:focus-visible {
+  outline: 2px solid #9c7660;
+  outline-offset: 2px;
+}
+.quick_link img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}

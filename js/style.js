@@ -1,5 +1,5 @@
 // main swiper
-const heroSwiper = new Swiper(".hero_swiper", {
+const heroSwiper = typeof Swiper !== "undefined" ? new Swiper(".hero_swiper", {
   loop: true,
 
   speed: 700,
@@ -18,4 +18,13 @@ const heroSwiper = new Swiper(".hero_swiper", {
     nextEl: ".hero_inner .swiper-button-next",
     prevEl: ".hero_inner .swiper-button-prev",
   },
+}) : null;
+
+const menuToggle = document.querySelector('.menu_toggle');
+menuToggle.addEventListener('click', () => {
+ const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+ menuToggle.setAttribute('aria-expanded', String(!expanded));
 });
+document.querySelectorAll('.nav a').forEach(link => link.addEventListener('click', () => menuToggle.setAttribute('aria-expanded', 'false')));
+document.addEventListener('keydown', event => { if (event.key === 'Escape') menuToggle.setAttribute('aria-expanded', 'false'); });
+

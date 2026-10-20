@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="setting/font.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/quick.css" />
+    <link rel="stylesheet" href="css/product.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <div class="promotion">
@@ -27,21 +30,29 @@
         </h1>
         <!-- LOGO -->
 
-        <nav class="nav">
+        <button
+          class="menu_toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="categories"
+        >
+          MENU <span>＋</span>
+        </button>
+        <nav class="nav" id="categories" aria-label="상품 카테고리">
           <ul class="category">
-            <li><a href="#">NEW</a></li>
-            <li><a href="#">BEST</a></li>
-            <li><a href="#">#MADE</a></li>
-            <li><a href="#">All Season Best</a></li>
-            <li><a href="#">CODY SET</a></li>
-            <li><a href="#">OUTER</a></li>
-            <li><a href="#">TOP</a></li>
-            <li><a href="#">DRESS</a></li>
-            <li><a href="#">BOTTOM</a></li>
-            <li><a href="#">BAG & SHOES</a></li>
-            <li><a href="#">ACC</a></li>
-            <li><a href="#">잠옷 & 트레이닝</a></li>
-            <li><a href="#">빠른출고</a></li>
+            <li><a href="#new">NEW</a></li>
+            <li><a href="#best">BEST</a></li>
+            <li><a href="#made">#MADE</a></li>
+            <li><a href="#collection">All Season Best</a></li>
+            <li><a href="#collection">CODY SET</a></li>
+            <li><a href="#collection">OUTER</a></li>
+            <li><a href="#collection">TOP</a></li>
+            <li><a href="#collection">DRESS</a></li>
+            <li><a href="#collection">BOTTOM</a></li>
+            <li><a href="#collection">BAG & SHOES</a></li>
+            <li><a href="#collection">ACC</a></li>
+            <li><a href="#collection">잠옷 & 트레이닝</a></li>
+            <li><a href="#collection">빠른출고</a></li>
           </ul>
         </nav>
 
@@ -60,22 +71,22 @@
           <div class="swiper hero_swiper">
             <ul class="swiper-wrapper hero_banner">
               <li class="swiper-slide">
-                <a href="#">
+                <a href="#new">
                   <img src="img/mainBanner1.jpeg" alt="크림치즈 메인배너 1" />
                 </a>
               </li>
               <li class="swiper-slide">
-                <a href="#">
+                <a href="#new">
                   <img src="img/mainBanner2.jpeg" alt="크림치즈 메인배너 2" />
                 </a>
               </li>
               <li class="swiper-slide">
-                <a href="#">
+                <a href="#new">
                   <img src="img/mainBanner3.gif" alt="크림치즈 메인배너 3" />
                 </a>
               </li>
               <li class="swiper-slide">
-                <a href="#">
+                <a href="#new">
                   <img src="img/mainBanner4.jpeg" alt="크림치즈 메인배너 4" />
                 </a>
               </li>
@@ -96,42 +107,547 @@
       </section>
       <!-- hero -->
 
-      <section class="quick_category"></section>
+      <section class="quick_category">
+        <div class="quick_inner">
+          <a href="#collection" class="quick_link">
+            <img src="img/quick-new.png" alt="new ICON" />
+            NEW
+          </a>
+          <a href="#collection" class="quick_link">
+            <img src="img/quick-best.png" alt="best ICON" /> BEST</a
+          >
+          <a href="#collection" class="quick_link">
+            <img src="img/quick-made.png" alt="made ICON" /> #MADE</a
+          >
+          <a href="#collection" class="quick_link">
+            <img src="img/quick-cody-set.png" alt="cody ICON" /> CODY SET</a
+          >
+          <a href="#collection" class="quick_link">
+            <img src="img/quick-outer.png" alt="outer ICON" /> OUTER</a
+          >
+          <a href="#collection" class="quick_link">
+            <img src="img/quick-top.png" alt="top ICON" /> TOP</a
+          >
+          <a href="#collection" class="quick_link">
+            <img src="img/quick-bottom.png" alt="bottom ICON" /> BOTTOM</a
+          >
+          <a href="#collection" class="quick_link">
+            <img src="img/quick-delivery.png" alt="delivery ICON" /> 빠른출고</a
+          >
+        </div>
+      </section>
       <!-- quick_category -->
 
-      <section class="new_arrivals"></section>
+      <section class="new_arrivals" id="new">
+        <div class="product_inner">
+          <div class="section_head">
+            <div>
+              <p class="eyebrow">A LITTLE NEW, EVERY DAY</p>
+              <h2>NEW ARRIVALS</h2>
+              <p class="section_desc">매일의 옷장에 더하는 새로운 취향</p>
+            </div>
+            <!-- <a href="#collection" class="section_more">컬렉션 보기 ↗</a> -->
+          </div>
+          <ul class="product_list">
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%ED%86%A0%ED%94%84%20%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C%20%EB%82%98%ED%8F%B4%EB%A0%88%EC%98%B9%20%EC%9E%90%EC%BC%93%20-%20jk"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <img
+                    src="img/new_arrivals01.webp"
+                    alt="토프 스웨이드 나폴레옹 자켓"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">NEW / AUTUMN</p>
+                  <h3 class="product_name">토프 스웨이드 나폴레옹 자켓 - jk</h3>
+                  <p class="product_desc">
+                    빈티지한 실루엣으로 완성하는 가을 아우터
+                  </p>
+                  <del class="product_original">KRW 79,200</del>
+                  <p class="product_price">KRW 71,280</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EC%95%84%EB%A5%B4%EB%8D%B4%20%ED%95%98%EC%9D%B4%EB%84%A5%20%EC%98%A4%EB%B2%84%ED%95%8F%20%EC%BD%94%ED%8A%BC%20%EC%9E%90%EC%BC%93"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <img
+                    src="img/new_arrivals02.webp"
+                    alt="아르덴 하이넥 오버핏 코튼 자켓"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">NEW / AUTUMN</p>
+                  <h3 class="product_name">아르덴 하이넥 오버핏 코튼 자켓</h3>
+                  <p class="product_desc">하이넥 디테일과 여유로운 오버핏</p>
+                  <del class="product_original">KRW 89,000</del>
+                  <p class="product_price">KRW 80,100</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EB%B8%94%EB%9E%91%EB%93%9C%20%EB%A0%88%EC%9D%B4%EC%8A%A4%20%EC%96%B8%EB%B0%9C%20%EC%8A%AC%EB%A6%BD%20%EB%A0%88%EC%9D%B4%EC%96%B4%EB%93%9C%20%EB%82%98%EC%8B%9C%20%EC%9B%90%ED%94%BC%EC%8A%A4"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <img
+                    src="img/new_arrivals03.webp"
+                    alt="블랑드 레이스 언발 슬립 레이어드 나시 원피스"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">NEW / AUTUMN</p>
+                  <h3 class="product_name">
+                    블랑드 레이스 언발 슬립 레이어드 나시 원피스
+                  </h3>
+                  <p class="product_desc">가볍게 겹쳐 입는 레이스 레이어드</p>
+                  <del class="product_original">KRW 52,500</del>
+                  <p class="product_price">KRW 47,250</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EB%A9%94%EB%A5%B4%EB%94%94%EC%95%88%20%EB%8B%88%ED%8A%B8%20%EA%B0%80%EB%94%94%EA%B1%B4"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <img
+                    src="img/new_arrivals04.webp"
+                    alt="메르디안 니트 가디건"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">NEW / AUTUMN</p>
+                  <h3 class="product_name">메르디안 니트 가디건</h3>
+                  <p class="product_desc">매일 손이 가는 포근한 니트웨어</p>
+                  <del class="product_original">KRW 27,800</del>
+                  <p class="product_price">KRW 25,020</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EB%B3%B4%ED%83%9C%EB%8B%88%EC%BB%AC%20%EB%B8%94%EB%9D%BC%EC%9A%B0%EC%8A%A4%20%EC%8B%9C%EC%8A%A4%EB%A3%A8%20%EA%B8%B4%ED%8C%94%20%ED%8B%B0%EC%85%94%EC%B8%A0"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <img
+                    src="img/new_arrivals05.webp"
+                    alt="보태니컬 블라우스 시스루 긴팔 티셔츠"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">NEW / AUTUMN</p>
+                  <h3 class="product_name">
+                    보태니컬 블라우스 시스루 긴팔 티셔츠
+                  </h3>
+                  <p class="product_desc">
+                    은은한 비침으로 더하는 섬세한 분위기
+                  </p>
+                  <del class="product_original">KRW 34,500</del>
+                  <p class="product_price">KRW 30,600</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EB%8D%B0%EC%9D%B4%EB%A6%B0%20%EB%A0%88%EC%9D%B4%EC%8A%A4%20%EC%85%94%EB%A7%81%20%EB%82%98%EC%8B%9C%20%EB%AF%B8%EB%8B%88%20%EC%9B%90%ED%94%BC%EC%8A%A4"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <img
+                    src="img/new_arrivals06.webp"
+                    alt="데이린 레이스 셔링 나시 미니 원피스"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">NEW / AUTUMN</p>
+                  <h3 class="product_name">
+                    데이린 레이스 셔링 나시 미니 원피스
+                  </h3>
+                  <p class="product_desc">
+                    셔링 디테일이 돋보이는 레이어드 원피스
+                  </p>
+                  <del class="product_original">KRW 39,000</del>
+                  <p class="product_price">KRW 35,100</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%ED%86%A0%ED%94%84%20%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C%20%EB%82%98%ED%8F%B4%EB%A0%88%EC%98%B9%20%EC%9E%90%EC%BC%93%20-%20jk"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <img
+                    src="img/new_arrivals01.webp"
+                    alt="토프 스웨이드 나폴레옹 자켓"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">NEW / AUTUMN</p>
+                  <h3 class="product_name">토프 스웨이드 나폴레옹 자켓 - jk</h3>
+                  <p class="product_desc">
+                    빈티지한 실루엣으로 완성하는 가을 아우터
+                  </p>
+                  <del class="product_original">KRW 79,200</del>
+                  <p class="product_price">KRW 71,280</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EC%95%84%EB%A5%B4%EB%8D%B4%20%ED%95%98%EC%9D%B4%EB%84%A5%20%EC%98%A4%EB%B2%84%ED%95%8F%20%EC%BD%94%ED%8A%BC%20%EC%9E%90%EC%BC%93"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <img
+                    src="img/new_arrivals02.webp"
+                    alt="아르덴 하이넥 오버핏 코튼 자켓"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">NEW / AUTUMN</p>
+                  <h3 class="product_name">아르덴 하이넥 오버핏 코튼 자켓</h3>
+                  <p class="product_desc">하이넥 디테일과 여유로운 오버핏</p>
+                  <del class="product_original">KRW 89,000</del>
+                  <p class="product_price">KRW 80,100</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EB%B8%94%EB%9E%91%EB%93%9C%20%EB%A0%88%EC%9D%B4%EC%8A%A4%20%EC%96%B8%EB%B0%9C%20%EC%8A%AC%EB%A6%BD%20%EB%A0%88%EC%9D%B4%EC%96%B4%EB%93%9C%20%EB%82%98%EC%8B%9C%20%EC%9B%90%ED%94%BC%EC%8A%A4"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <img
+                    src="img/new_arrivals03.webp"
+                    alt="블랑드 레이스 언발 슬립 레이어드 나시 원피스"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">NEW / AUTUMN</p>
+                  <h3 class="product_name">
+                    블랑드 레이스 언발 슬립 레이어드 나시 원피스
+                  </h3>
+                  <p class="product_desc">가볍게 겹쳐 입는 레이스 레이어드</p>
+                  <del class="product_original">KRW 52,500</del>
+                  <p class="product_price">KRW 47,250</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EB%A9%94%EB%A5%B4%EB%94%94%EC%95%88%20%EB%8B%88%ED%8A%B8%20%EA%B0%80%EB%94%94%EA%B1%B4"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <img
+                    src="img/new_arrivals04.webp"
+                    alt="메르디안 니트 가디건"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">NEW / AUTUMN</p>
+                  <h3 class="product_name">메르디안 니트 가디건</h3>
+                  <p class="product_desc">매일 손이 가는 포근한 니트웨어</p>
+                  <del class="product_original">KRW 27,800</del>
+                  <p class="product_price">KRW 25,020</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!-- new_arrivals -->
 
-      <section class="made"></section>
+      <section class="made" id="made"><div class="made_inner">
+        <div class="made_visual">
+          <img
+            src="img/new_arrivals01.webp"
+            alt="토프 스웨이드 자켓 가을 스타일링"
+            loading="lazy"
+          />
+        </div>
+        <div class="made_copy">
+          <p class="eyebrow">CREAM CHEESE / AUTUMN EDIT</p>
+          <h2>오래 함께할,<br />우리의 가을.</h2>
+          <p>
+            차분한 컬러와 자연스러운 실루엣.<br />가볍게 걸쳐도 분위기가
+            완성되는<br />크림치즈의 가을 아우터를 만나보세요.
+          </p>
+          <a class="collection_cta" href="#collection"
+            >가을 컬렉션 둘러보기 ↗</a
+          >
+        </div>
+      </div></section>
       <!-- made -->
 
-      <section class="trending"></section>
+      <section class="trending" id="best">
+        <div class="product_inner">
+          <div class="section_head">
+            <div>
+              <p class="eyebrow">THE AUTUMN SELECTION</p>
+              <h2>BEST PICKS</h2>
+              <p class="section_desc">이번 가을, 눈여겨볼 다섯 가지 아이템</p>
+            </div>
+          </div>
+          <ul class="product_list best_list">
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%ED%86%A0%ED%94%84%20%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C%20%EB%82%98%ED%8F%B4%EB%A0%88%EC%98%B9%20%EC%9E%90%EC%BC%93%20-%20jk"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <span class="product_rank">01</span>
+                  <img
+                    src="img/new_arrivals01.webp"
+                    alt="토프 스웨이드 나폴레옹 자켓"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">EDITOR’S PICK</p>
+                  <h3 class="product_name">토프 스웨이드 나폴레옹 자켓 - jk</h3>
+                  <del class="product_original">KRW 79,200</del>
+                  <p class="product_price">KRW 71,280</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EB%A9%94%EB%A5%B4%EB%94%94%EC%95%88%20%EB%8B%88%ED%8A%B8%20%EA%B0%80%EB%94%94%EA%B1%B4"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <span class="product_rank">02</span>
+                  <img
+                    src="img/new_arrivals04.webp"
+                    alt="메르디안 니트 가디건"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">EDITOR’S PICK</p>
+                  <h3 class="product_name">메르디안 니트 가디건</h3>
+                  <del class="product_original">KRW 27,800</del>
+                  <p class="product_price">KRW 25,020</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EC%95%84%EB%A5%B4%EB%8D%B4%20%ED%95%98%EC%9D%B4%EB%84%A5%20%EC%98%A4%EB%B2%84%ED%95%8F%20%EC%BD%94%ED%8A%BC%20%EC%9E%90%EC%BC%93"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <span class="product_rank">03</span>
+                  <img
+                    src="img/new_arrivals02.webp"
+                    alt="아르덴 하이넥 오버핏 코튼 자켓"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">EDITOR’S PICK</p>
+                  <h3 class="product_name">아르덴 하이넥 오버핏 코튼 자켓</h3>
+                  <del class="product_original">KRW 89,000</del>
+                  <p class="product_price">KRW 80,100</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EB%B8%94%EB%9E%91%EB%93%9C%20%EB%A0%88%EC%9D%B4%EC%8A%A4%20%EC%96%B8%EB%B0%9C%20%EC%8A%AC%EB%A6%BD%20%EB%A0%88%EC%9D%B4%EC%96%B4%EB%93%9C%20%EB%82%98%EC%8B%9C%20%EC%9B%90%ED%94%BC%EC%8A%A4"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <span class="product_rank">04</span>
+                  <img
+                    src="img/new_arrivals03.webp"
+                    alt="블랑드 레이스 언발 슬립 레이어드 나시 원피스"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">EDITOR’S PICK</p>
+                  <h3 class="product_name">
+                    블랑드 레이스 언발 슬립 레이어드 나시 원피스
+                  </h3>
+                  <del class="product_original">KRW 52,500</del>
+                  <p class="product_price">KRW 47,250</p>
+                </div>
+              </a>
+            </li>
+            <li class="product_card">
+              <a
+                href="https://www.creamcheese.co.kr/product/search.html?keyword=%EB%B3%B4%ED%83%9C%EB%8B%88%EC%BB%AC%20%EB%B8%94%EB%9D%BC%EC%9A%B0%EC%8A%A4%20%EC%8B%9C%EC%8A%A4%EB%A3%A8%20%EA%B8%B4%ED%8C%94%20%ED%8B%B0%EC%85%94%EC%B8%A0"
+                class="product_link"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="product_img">
+                  <span class="product_rank">05</span>
+                  <img
+                    src="img/new_arrivals05.webp"
+                    alt="보태니컬 블라우스 시스루 긴팔 티셔츠"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product_info">
+                  <p class="product_tag">EDITOR’S PICK</p>
+                  <h3 class="product_name">
+                    보태니컬 블라우스 시스루 긴팔 티셔츠
+                  </h3>
+                  <p class="product_desc">
+                    은은한 비침으로 더하는 섬세한 분위기
+                  </p>
+                  <del class="product_original">KRW 34,500</del>
+                  <p class="product_price">KRW 30,600</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!-- trending -->
 
-      <section class="review"></section>
+      <section class="collection_note" id="collection">
+        <p class="eyebrow">FIND YOUR EVERYDAY</p>
+        <h2>오늘은 어떤 무드인가요?</h2>
+        <p>나의 일상에 어울리는 한 벌을 찾아보세요.</p>
+        <div class="collection_links">
+          <a href="#new">새롭게 만나는 가을 ↗</a
+          ><a href="#best">에디터가 고른 아이템 ↗</a
+          ><a href="#made">가을 아우터 이야기 ↗</a>
+        </div>
+      </section>
       <!-- review -->
     </main>
 
     <footer id="footer">
       <div class="footer_inner">
+        <!-- 고객센터 · 계좌 안내 -->
         <div class="customer">
-          <h3>1555-7130</h3>
-          <p>AM 9:00 - PM 18:00</p>
-          <p>LUNCH PM 12:00 - PM 13:00</p>
-          <p>SAT.SUN.HOLIDAY OFF</p>
+          <h3>CUSTOMER CENTER</h3>
+
+          <p class="customer_tel">1555-7130</p>
+          <p>09:00 - 18:00 / LUNCH 12:00 - 13:00</p>
+          <p>SAT. SUN. HOLIDAY OFF</p>
+
+          <div class="bank">
+            <p>신한은행 : 110-036-123439</p>
+            <p>예금주 : 주식회사 크치컴퍼니</p>
+          </div>
         </div>
 
-        <div class="bank">
-          <h3>BANKING ACCOUNT</h3>
-          <p>신한은행 : 110-036-123439</p>
-          <p>예금주 : 주식회사 크치컴퍼니</p>
+        <!-- 반품 · 교환 -->
+        <div class="return">
+          <h3>RETURN / EXCHANGE</h3>
+
+          <p>
+            서울 성동구 왕십리로14가길 5<br />
+            CJ대한통운 한강집배점 NS센터 크림치즈마켓
+          </p>
+
+          <p class="footer_note">
+            ※ 교환/반품 신청 전 이용안내 및 공지사항을 꼭 확인해주세요.
+          </p>
+
+          <ul class="community">
+            <li><a href="#">NOTICE</a></li>
+            <li><a href="#">QnA</a></li>
+            <li><a href="#">REVIEW</a></li>
+            <li><a href="#">EVENT</a></li>
+          </ul>
         </div>
-        <ul class="community">
-          <li><a href="#">NOTICE</a></li>
-          <li><a href="#">QnA</a></li>
-          <li><a href="#">REVIEW</a></li>
-          <li><a href="#">EVENT</a></li>
-        </ul>
+
+        <!-- 회사 정보 -->
+        <div class="company">
+          <ul class="footer_links">
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">AGREEMENT</a></li>
+            <li><a href="#" class="privacy_link">PRIVACY POLICY</a></li>
+            <li><a href="#">GUIDE</a></li>
+          </ul>
+
+          <p>COMPANY : 주식회사 크치컴퍼니 / CEO : Nam yun a</p>
+          <p>TEL : 1555-7130 / FAX : 1555-7130</p>
+          <p>MANAGER : Nam yun a (hanul302@naver.com)</p>
+          <p>BUSINESS LICENSE : 144-81-38561</p>
+          <p>MAIL ORDER LICENSE : 제 2022-서울강동-1325호</p>
+          <p>
+            ADDRESS : 서울 성동구 왕십리로14가길 5<br />
+            CJ대한통운 한강집배점 NS센터 크림치즈마켓
+          </p>
+
+          <p class="copyright">
+            Copyright &copy; Cream Cheese. All rights reserved.
+          </p>
+          <p class="portfolio_notice">
+            본 사이트는 개인 포트폴리오용 리뉴얼 페이지입니다.
+          </p>
+        </div>
+
+        <!-- 서비스 안내 -->
+        <div class="service">
+          <h3>SERVICE</h3>
+
+          <p>
+            고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한
+            PG 에스크로 구매안전서비스를 이용하실 수 있습니다.
+          </p>
+
+          <!-- 실제 확인 페이지 주소로 교체 -->
+          <a href="#" class="service_link">서비스 가입사실 확인 ↗</a>
+        </div>
       </div>
     </footer>
     <!-- footer -->
